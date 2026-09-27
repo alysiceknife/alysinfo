@@ -1,0 +1,42 @@
+<style>
+
+.div a{
+    
+    padding-left: 20px;
+}
+
+@media (max-width: 800px){
+    .div a{
+        padding-left: 0px;
+        margin-left: 0px;
+        width: 130px;
+    }
+    .a{
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+}
+
+</style>
+<div style="  display: flex; flex-direction: column; justify-content: flex-end; ">
+<h1 style="text-align: center; height: 50px; color: white; height:50px; line-height:50px;  text-shadow: 2px 2px rgba(1,1,1,.5);">{{page.title}}</h1>
+<div style="width:200px; height:2px; border-bottom:3px solid rgb(160, 160, 160); box-shadow: 0px 0px 5px black;"></div>
+{%for x in site.data.links%}
+{%if page.title != x.text %}
+<a href="{{site.url}}/{{x.link}}" style="margin-left: 20px; line-height:250%;">
+<div style="padding-left: 20px; background-color:#d5d1cf ; display: flex; flex-direction:row; justify-content: space-between; 
+;border:1px outset rgb(160, 160, 160); 
+width: 200px; margin-left: -20px;"><div>{{x.text}}</div><div style="display: flex; justify-content: center; 
+align-self: center; margin-right: 16px;"><img src="{{x.icon}}"width="24"height="24"></div></div>
+</a>
+{%else%}
+<a href="{{site.url}}/{{x.link}}" style="line-height:250%; margin-left: 20px;">
+<div style="padding-left: 20px; z-index: 4; background-image:linear-gradient(to left, #FFFFFF 0%,  rgb(160, 160, 160)10% #d5d1cf 30%, #FFFFFF 70% ) ; display: flex; flex-direction:row; justify-content: space-between; 
+border:3px inset rgb(202, 202, 202);; width: 200px; margin-left: -20px;"><div>{{x.text}}</div><div style="display: flex; justify-content: center; align-self: center; margin-right: 16px;"><img src="{{x.icon}}"width="24"height="24"></div></div>
+</a>
+{%endif%}
+{%endfor%}
+
+</div>
+<div style="margin-left: 0px; width:200px; height:2px; border-bottom:3px solid rgb(160, 160, 160); box-shadow: 0px 0px 5px black; margin-bottom: 5px;"></div>
+{%include 88x31.html%}

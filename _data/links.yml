@@ -1,0 +1,18 @@
+- text: home
+  link: 
+  icon: assets/icons/vista_pc_1.ico
+- text: blog
+  link: blog.html
+  icon: assets/icons/vista_book_1.ico
+- text: atelier 
+  link: atelier.html
+  icon: assets/icons/vista_search_globe.ico
+- text: resources
+  link: resources.html
+  icon: assets/icons/trashbin3.ico
+- text: about
+  link: about.html
+  icon: assets/icons/vista_info.ico
+- text: contact
+  link: contact.html
+  icon: assets/icons/AIM.png
