@@ -24,7 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   this is alys (aka phosphorrgirl)'s website; a collection of links, a blog,
   some webgames and some other things along those lines can be found here.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://sites.wisp.place/alys.info/alys.info/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://sites.wisp.place/alys.info" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: phosphorrgirl
 github_username:  alysiceknife
 bsky: alys.info
